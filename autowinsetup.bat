@@ -25,7 +25,6 @@ reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "CmdLine" /t REG_SZ
 reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "RespecializeCmdLine" /t REG_SZ /d " "
 echo -------------------------------------------------------------------------
 echo Done! Would you like to restart?
-echo Open SysPrep?
 set /p restart?=Please press Y or N: 
 If /I "%Srestart?%"=="Y" goto restart
 :restart
