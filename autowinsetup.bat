@@ -15,6 +15,7 @@ echo -------------------------------------------------------------------------
 set /p UserName=Please enter a username: 
 net user %UserName% /add
 NET LOCALGROUP Administrators %UserName% /ADD
+NET LOCALGROUP Users %UserName% /ADD
 echo Adding necessary registry edits........
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OOBE" /v "DisablePrivacyExperience" /t REG_DWORD /d 1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polices\System" /v "EnableCursorSupprression" /t REG_DWORD /d 0
