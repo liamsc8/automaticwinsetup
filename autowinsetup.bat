@@ -7,7 +7,7 @@ color 9
 echo Please Wait.... Loading....
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
-echo V1.2.0 Open Beta
+echo V1.0.0
 echo ----------------------WARNING----------------------
 echo Please make sure you run this as admin and in audit mode! And this will edit your registry!
 echo ---------------------------------------------------
@@ -22,8 +22,8 @@ REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup: /v "OOBEInProgress" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v "SetupPhase" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v "SetupType" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "VerboseStatus" /t REG_DWORD /d 1
-reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "CmdLine" /t REG_SZ /d " "
-reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "RespecializeCmdLine" /t REG_SZ /d " "
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "CmdLine" /t REG_SZ /d " "
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "RespecializeCmdLine" /t REG_SZ /d " "
 cls
 echo -----------------------------------------------------------------------------------------
 echo Done! Would you like to restart?
