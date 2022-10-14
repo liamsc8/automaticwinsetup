@@ -1,4 +1,4 @@
-//setting up the cmd
+::setting up the cmd
 @echo off
 title Automatic Windows Setup
 color 9
