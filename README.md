@@ -11,3 +11,5 @@ Install windows like normal. Then once you get to the oobe press SHIFT+CTRL+F3. 
 If you are going to use this in one of your videos then please credit me and send the github link in the desc! It helps me out alot and makes me more motivated to make more projects like this!
 
 The source code should be in the .bat file.
+
+V1.0.0
