@@ -16,6 +16,4 @@ First it asks you if you want to continue with the auto setup, if you say yes it
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The source code should be in the .bat file.
-
 V1.0.0
