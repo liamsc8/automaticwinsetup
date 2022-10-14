@@ -8,10 +8,10 @@ Install windows like normal. Then once you get to the oobe press SHIFT+CTRL+F3. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-If you are going to use this in one of your videos then please credit me and send the github link in the desc! It helps me out alot and makes me more motivated to make more projects like this!
-
 # How it works
 
 First it asks you if you want to continue with the auto setup, if you say yes it will ask you for a username. After you put that username in, it stores it and creates as a user, then it will apply necessary registry edits to skip the OOBE. Then it will open SysPrep to restart the computer, after that you should be in your account!
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+If you are going to use this in one of your videos then please credit my discord (liam00#3441) and send the github link in the desc! It helps me out alot and makes me more motivated to make more projects like this!
