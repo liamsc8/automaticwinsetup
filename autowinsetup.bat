@@ -2,7 +2,7 @@
 title Automatic Windows Setup
 color 9
 echo Please make you you run this as administrator and in audit mode.
-echo V1.2.0
+echo V1.2.0 Open Beta
 echo -----------------------------------------------------------------------------------------
 echo Continue and start setting up? Press Y for yes and N for no
 set /p Input=Please press Y or N: 
@@ -12,6 +12,8 @@ goto no
 echo Please Wait....
 cls
 echo -----------------------------------------------------------------------------------------
+echo Automatic Windows Setup
+echo V1.2.0 Open Beta
 set /p UserName=Please enter a username: 
 net user %UserName% /add
 NET LOCALGROUP Administrators %UserName% /ADD
