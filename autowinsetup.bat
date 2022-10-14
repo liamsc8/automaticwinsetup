@@ -1,20 +1,17 @@
+//setting up the cmd
 @echo off
 title Automatic Windows Setup
 color 9
-echo Please make you you run this as administrator and in audit mode.
-echo V1.2.0 Open Beta
-echo -----------------------------------------------------------------------------------------
-echo Continue and start setting up? Press Y for yes and N for no
-set /p Input=Please press Y or N: 
-If /I "%Input%"=="Y" goto yes
-goto no
-:yes
-echo Please Wait....
-cls
+
+
+echo Please Wait.... Loading....
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
 echo V1.2.0 Open Beta
-set /p UserName=Please enter a username: 
+echo ----------------------WARNING----------------------
+echo Please make sure you run this as admin and in audit mode! And this will edit your registry!
+echo ---------------------------------------------------
+set /p UserName=Please enter a new account username: 
 net user %UserName% /add
 NET LOCALGROUP Administrators %UserName% /ADD
 NET LOCALGROUP Users %UserName% /ADD
