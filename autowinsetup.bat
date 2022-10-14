@@ -2,7 +2,7 @@
 title Automatic Windows Setup
 color 9
 echo Please make you you run this as administrator and in audit mode.
-echo V1.0.0
+echo V1.1.0
 echo -------------------------------------------------------------------------
 echo Continue and start setting up? Press Y for yes and N for no
 set /p Input=Please press Y or N: 
@@ -24,11 +24,11 @@ REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v "SetupType" /t REG_DWORD /d 0
 reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "CmdLine" /t REG_SZ /d " "
 reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "RespecializeCmdLine" /t REG_SZ /d " "
 echo -------------------------------------------------------------------------
-echo Done! Please use SysPrep to restart.
+echo Done! Would you like to restart?
 echo Open SysPrep?
-set /p SysPrepOpen=Please press Y or N: 
-If /I "%SysPrepOpen%"=="Y" goto sysprepyes
-:sysprepyes
-start C:\Windows\System32\Sysprep\sysprep.exe
+set /p restart?=Please press Y or N: 
+If /I "%Srestart?%"=="Y" goto restart
+:restart
+shutdown /r
 :no
 pause
