@@ -20,7 +20,7 @@ echo ---------------------------------------------------------------------------
 echo Adding necessary registry edits........
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OOBE" /v "DisablePrivacyExperience" /t REG_DWORD /d 1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polices\System" /v "EnableCursorSupprression" /t REG_DWORD /d 0
-REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup: /v "OOBEInProgress" /t REG_DWORD /d 0
+REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v "OOBEInProgress" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v "SetupPhase" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /v "SetupType" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "VerboseStatus" /t REG_DWORD /d 1
