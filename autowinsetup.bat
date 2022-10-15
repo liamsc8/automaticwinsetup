@@ -7,14 +7,16 @@ color 9
 echo Please Wait.... Loading....
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
-echo V1.0.0
+echo V1.0.1
 echo ----------------------WARNING----------------------
-echo Please make sure you run this as admin and in audit mode! And this will edit your registry!
+echo Please make sure you run this as admin and in audit mode! This will only work on NEW windows installations.
 echo ---------------------------------------------------
 set /p UserName=Please enter a new account username: 
 net user %UserName% /add
 NET LOCALGROUP Administrators %UserName% /ADD
 NET LOCALGROUP Users %UserName% /ADD
+echo Created Account %UserName%
+echo -----------------------------------------------------------------------------------------
 echo Adding necessary registry edits........
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OOBE" /v "DisablePrivacyExperience" /t REG_DWORD /d 1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Polices\System" /v "EnableCursorSupprression" /t REG_DWORD /d 0
