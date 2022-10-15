@@ -10,7 +10,7 @@ Install windows like normal, then once you get to the OOBE press SHIFT+CTRL+F3. 
 
 # Source Code
 
-You can download the latest version here: https://github.com/liamsc8/automaticwinsetup/releases/tag/V.1.0.1. You can view the source code here: https://github.com/liamsc8/automaticwinsetup/blob/main/autowinsetup.bat. I will be posting all the versions in the thing above.
+You can download the latest version here: https://github.com/liamsc8/automaticwinsetup/releases/tag/V.1.0.1. You can view the source code here: https://github.com/liamsc8/automaticwinsetup/blob/main/autowinsetupV1.bat. I will be posting all the versions in the thing above.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
