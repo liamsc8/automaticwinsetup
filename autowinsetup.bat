@@ -3,18 +3,15 @@
 title Automatic Windows Setup
 color 9
 
-
-echo Please Wait.... Loading....
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
-echo V1.0.1
+echo V1.0.2
 echo ----------------------WARNING----------------------
 echo Please make sure you run this as admin and in audit mode! This will only work on NEW windows installations.
 echo ---------------------------------------------------
 set /p UserName=Please enter a new account username: 
 net user %UserName% /add
 NET LOCALGROUP Administrators %UserName% /ADD
-NET LOCALGROUP Users %UserName% /ADD
 echo Created Account %UserName%
 echo -----------------------------------------------------------------------------------------
 echo Adding necessary registry edits........
