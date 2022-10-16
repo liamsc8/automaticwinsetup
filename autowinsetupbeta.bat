@@ -5,8 +5,9 @@ title Automatic Windows Setup
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
 echo V1.0.2 Open Beta
+echo Please make sure you run this as admin and in audit mode!
 echo ----------------------WARNING----------------------
-echo Please make sure you run this as admin and in audit mode! This will only work on NEWLY installed windows installations.
+echo This will only work on NEWLY installed windows installations.
 echo ---------------------------------------------------
 set /p UserName=Please enter a new account username: 
 net user %UserName% /add
