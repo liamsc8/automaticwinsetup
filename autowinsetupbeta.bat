@@ -5,7 +5,6 @@ title Automatic Windows Setup
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
 echo V1.0.2 Open Beta
-echo Please make sure you run this as admin and in audit mode!
 echo ----------------------WARNING----------------------
 echo This will only work on NEWLY installed windows installations.
 echo ---------------------------------------------------
@@ -29,6 +28,6 @@ echo Done! Would you like to restart?
 set /p restart?=Please press Y or N: 
 If /I "restart?%"=="Y" goto restart
 :restart
-shutdown /r
+shutdown /r /t 0
 :no
 pause
