@@ -1,7 +1,7 @@
 ::setting up the cmd
 @echo off
 title Automatic Windows Setup
-
+echo Please make sure you run this as admin and in audit mode!
 echo -----------------------------------------------------------------------------------------
 echo Automatic Windows Setup
 echo V1.0.2 Open Beta
@@ -22,12 +22,15 @@ REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\Setup" /f /v "SetupType" /t REG_DWORD /d 0
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /f /v "VerboseStatus" /t REG_DWORD /d 1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "CmdLine" /t REG_SZ /d " "
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\SYSTEM\Setup" /f /v "RespecializeCmdLine" /t REG_SZ /d " "
-cls
+
+echo -----------------------------------------------------------------------------------------
+echo Adding necessary system edits....
+net user Administrator /active:no
 echo -----------------------------------------------------------------------------------------
 echo Done! Would you like to restart?
 set /p restart?=Please press Y or N: 
 If /I "restart?%"=="Y" goto restart
 :restart
-shutdown /r /t 0
+shutdown /r
 :no
-pause
+pause>null
