@@ -29,7 +29,7 @@ net user Administrator /active:no
 echo -----------------------------------------------------------------------------------------
 echo Done! Would you like to restart?
 set /p restart?=Please press Y or N: 
-If /I "restart?%"=="Y" goto restart
+If /I "restart%"=="Y" goto restart
 :restart
 shutdown /r
 :no
